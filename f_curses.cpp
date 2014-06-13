@@ -22,6 +22,12 @@ namespace zc
         }
     }
 
+
+    void drawBorderBox(WINDOW* window)
+    {
+        wborder(window, ACS_VLINE, ACS_VLINE, ACS_HLINE, ACS_HLINE, ACS_ULCORNER, ACS_URCORNER, ACS_LLCORNER, ACS_LRCORNER);
+    }
+
     void mvwteehline(WINDOW* window, const int& y, const int& x, const int& width)
     {
         mvwaddch(window, y, x, ACS_LTEE);
